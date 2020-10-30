@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <section class="Einkommensteuer">
+            <div id="first">
+                <h2>Einkommensteuerrechner</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <th> <label for="zahl">Zu versteuernde Einkommen (zvE):</label>
+                                <span>€</span> </th>
+                            <td> <input type="number" name="zwe" id="ZWE" ></td>
+                        </tr>   
+                    </div>
+
+                <div>
+                <form action="">
+                        <tr>   
+                            <th><label for="person">Berechnung nach :</label></th>
+                            <td> <select  id="liste">
+                        <option value="ledig" id="ledig">Ledig</option>
+                 <option value="heiratet" id="heiratet">Heiratet</option>
+        </select></td> 
+                        </tr>
+                </form>
+                </div>
+                <div>
+                <form action="">
+                    <tr>
+                        <th>  <label for="">Jahr</label> </th>
+                         <td>
+                            <select id="jahr">
+                            <option value="2018" id="jahr2018">2018</option> 
+                            <option value="2019" id="jahr2019">2019</option>
+                            <option value="2020" id="jahr2020">2020</option>
+                            </select></td>
+                        </tr>
+                    </form>
+                    <tr>
+                        
+                </select>
+                </td>
+                    </tr>
+                        
+                </table> 
+                </div>
+                <button class="br" onclick="berechnen()">berchnen</button>
+            </div>
+        </section>
+        <section class="Ergibnis">
+            <div id="second">
+                <h2>Ergebnis</h2>
+                <div id="ER"> </div>  
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
